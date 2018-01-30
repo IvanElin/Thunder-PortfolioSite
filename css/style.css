@@ -1,0 +1,183 @@
+/*GENERAL styles*/
+body{
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+.btn{
+	color: #9f9f9c;
+	font-size: 14px;
+	padding: 12px 15px;
+	border: 2px solid #9f9f9c;
+	text-transform: uppercase;
+	transition: 250ms;
+}
+ 
+.btn:hover{
+	background-color: #9f9f9c;
+	color: #3e3d38;
+}
+
+/*HEADER
+===========*/
+header{
+	background-color: #000;
+}
+
+.logo{
+	float: left;
+	padding: 30px 0;
+	max-width: 175px
+}
+
+.logo-img{
+	width: 100%;
+}
+
+.main-nav{
+	float: right;
+	padding: 24px 0 ;
+}
+ 
+nav li{
+	display: inline-block;
+	margin-left: 35px;
+}
+
+nav li:first-child{
+	margin-left: 0;
+}
+
+nav li a{
+	font-size: 13px;
+	color: #888;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: 250ms;
+}
+
+nav li a:hover{
+	color: #fff;
+}
+
+/*MAIN SLIDER
+===================================*/
+
+
+.slide-1{
+	height: 100%;
+	background-image: url(../img/slider-1.jpg);
+	background-size: cover;
+	padding: 170px 0 150px;
+}
+
+h1{
+	display: inline-block;
+	font-size: 38px;
+	font-weight: bold;
+	margin: 0;
+	color: #fff;
+	padding: 25px;
+	background-color: #6C5;
+	border-radius: 10px;
+	transition: 250ms;
+}
+
+h1:hover{
+	background-color:#382;
+}
+
+.main-headings p{
+	display: inline-block;
+	padding: 15px;
+	background-color: #000;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.header-img{
+	margin-top: -261px;
+	float: right;
+}
+
+
+/*FEATURES
+===================================*/
+.Our-features{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	line-height: 1.5;
+}
+
+.features{
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature{
+	margin: 0 10px;
+}
+
+.feature:first-child{
+	margin-left: 0px;
+}
+
+.feature:last-child{
+	margin-right: 0px;
+}
+
+.feature h2{
+	font-size: 34px;
+	text-transform: uppercase;
+}
+
+
+/*PPRTFOLIO
+===================================*/
+
+.portfolio{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: url(../img/portdolio-bg.jpg);
+	background-size: cover;
+}
+
+.upper-headings{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h3{
+	margin-bottom: 50px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.port-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.port-item{
+	margin-top: 10px;
+}
