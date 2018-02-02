@@ -21,17 +21,34 @@ a{
 }
 
 .btn{
-	color: #9f9f9c;
 	font-size: 14px;
 	padding: 12px 15px;
-	border: 2px solid #9f9f9c;
 	text-transform: uppercase;
 	transition: 250ms;
+}
+
+.btn-gray{
+	color: #9f9f9c;
+	border: 2px solid #9f9f9c;
 }
  
 .btn-gray:hover{
 	background-color: #9f9f9c;
 	color: #3e3d38;
+}
+
+.btn-green{
+	color: #fff;
+	border: 2px solid #89ca89;
+	background-color: #89ca89;
+	font-size: 18px;
+	font-weight: bold; 
+	padding: 15px 20px;
+}
+ 
+.btn-green:hover{
+	background-color: #fff;
+	color: #89ca89;
 }
 
 figure{
@@ -229,3 +246,45 @@ figcaption{
 	
 }
 
+/*PAGE CONTENT 
+===================================*/
+
+.page-content{
+	padding: 135px 0;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-container{
+	flex-basis: 490px;
+}
+
+
+/*LATEST NEWS 
+===================================*/
+
+.news-blocks{
+	display: flex;
+}
+
+
+/*TESTIMONIALS
+===================================*/
+
+
+/*OUR CLIENTS
+===================================*/
+
+
+/*NEWEST PRODUCTS
+===================================*/
+
+
+/*CALL TO ACTION
+===================================*/
+
+/*FOOTER
+===================================*/
