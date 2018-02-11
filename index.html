@@ -2,78 +2,136 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet/less" href="css/style.less">
+	<script src="js/less.min.js"></script>
 	<meta charset="UTF-8">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thunder Portfolio Site</title>
 </head>
 <body>
-	<header class="clearfix">
+	<header>
 			<!-- LOGO -->
 		<div class="container">
-			<div class="logo">
-				<a href=""><img src="img/Logo.png" class="logo-img" alt="logo"></a>
-			</div>
-
-			<!-- NAVigation -->
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Staff</a></li>
-					<li><a href="#">Pages</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>		
+			<div class="logo-nav">
+				<div class="logo">
+						<a href=""><img src="img/Logo.png" class="logo-img" alt="logo"></a>
+					</div>
+		
+					<!-- NAVigation -->
+					<nav class="main-nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Staff</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>		
+			</div>					
 		</div>
 	</header>
 
 	<!-- MAIN SLIDER
 	================================== -->
 	<section class="main-slider">
+						<div id="main-slider" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<!-- First slide -->
+						<div class="carousel-item active" id="first_slide">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="container">
+											<div class="first_slide_caption">
+												<div class="first_slide_hesdings">
+														<a href="#"><h1>Hear the Thunder</h1></a>
+														<br>
+													<h2>A super clean and easy to use Modern WordPress Theme</h2>	
+												</div>
+												<div class="hand-img-holder">
+													<img src="img/hand.png" alt="hand" class="hand-img">
+												</div>														
+											</div>
+										</div>																
+								</div>
+						</div>
+						<!-- Second slide -->
+						<div class="carousel-item" id="second_slide">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="container">
+									<div class="second_slide_caption">
+										<img src="img/computers.png" alt="computers">
+										<div class="second_slide_hesdings">
+											<h2>Responsive & Retina Ready</h2>
+											<p>Our lovely theme was built with
+												responsive and retina functionality.
+												So no matter how, when or where
+												you and clients access your site it
+												always looks pixel perfect.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Third slide -->
+						<div class="carousel-item" id="third_slide">
+							<div class="carousel-caption d-none d-md-block">
+									<div class="third_slide_caption">
+									<div class="container">
+										<h2>Looking For One Of The Best<br>	 WordPress Templates<br> On The Web?</h2>
+										<a href="#" class="btn btn-orange">Get Thunder</a>
+									</div>
+									<div class="slide-bottom">
+									<div class="container">
+											<div class="slide_bottom_items">
+													<div class="slide_bottom_item">1000<span>theme options</span> </div>
+													<div class="slide_bottom_item">100<span>shortcodes</span></div>
+													<div class="slide_bottom_item">infinite<span>possibilities</span></div>
+												</div>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+						</div>
 
-		<!-- Slide-1 -->
-		<div class="slide-1">
-			<div class="container">
-				<div class="main-headings">
-					<a href="#"><h1>Hear the Thunder</h1></a>
-					
-					<br>
-					<p>A super clean and easy to use Modern WordPress Theme</p>
+					<!-- Carousel controls -->
+					<a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-
-				<img src="img/hand.png" alt="hand" class="header-img">
-			</div>
-		</div>
 	</section>
 
 		<!-- FEATURES
 	================================== -->
 
-	<section class="Our-features">
+	<section class="our-features">
 		<div class="container">
 			<div class="features">		
 			<!-- Feature-1 -->
 				<div class="feature">
 					<img src="img/file.png" alt="file">
-					<h2>Powerful</h2>
+					<h3>Powerful</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae porro asperiores, repellendus doloribus atque impedit quia error nostrum laborum repellat.</p>
 				</div>
 				<!-- Feature-2 -->
 				<div class="feature">
 					<img src="img/chart.png" alt="Chart">
-					<h2>Creative</h2>
+					<h3>Creative</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi vero reprehenderit quia est ut aut eaque temporibus facilis in.</p>
 				</div>
 				<!-- Feature-3 -->
 				<div class="feature">
 					<img src="img/globe.png" alt="Globe">
-					<h2>Localized</h2>
+					<h3>Localized</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptate illum, maxime ipsum at voluptatem commodi velit dignissimos. </p>
 				</div>
 			</div>		
@@ -83,15 +141,13 @@
 		<!-- PORTFOLIO
 	================================== -->
 
-	<section class="portfolio">
+	<section class="portfolio parallax--bg">
 		<div class="container">
 			<div class="upper-headings">
-				<h3>Recent Work</h3>
+				<h4>Recent Work</h4>
 				<a href="#" class="btn btn-gray">Browse all</a>
 			</div>
 			
-
-			<!-- port-items -->
 			<div class="port-items">
 
 				<!-- item-1 -->
@@ -196,7 +252,7 @@
 
 			<div class="content">
 				<div class="text-container">
-					<h2>Hear The Thunder?</h2>
+					<h3>Hear The Thunder?</h3>
 					<p class="page-content--p">Let me introduce you to a clean, simple, yet powerful <span>PREMIUM WORDPRESS THEME</span>, created specifically for you.</p>
 					<a href="#" class="btn btn-green">Get Started</a>
 				</div>
@@ -210,31 +266,34 @@
 	<!-- LATEST NEWS
 	================================== -->
 
-	<section class="latest-news">
+	<section class="latest_news parallax--bg">
 		<div class="container">
-			<h3>Latest News</h3>
+			<h4>Latest News</h4>
 			<!-- news-BLOCKS -->
 			<div class="news-blocks">
 				<!-- BLOCK-1 -->
-				<div class="news-block">
+				<a href="#" class="news-block">
 					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
-					<h4>This is a simple blog post with an extra super long title</h4>
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
 					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
-				</div>
+				</a>
 
 				<!-- BLOCK-2 -->
-				<div class="news-block">
+				<a href="#" class="news-block">
 					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
-					<h4>This is a simple blog post with an extra super long title</h4>
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
 					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
-				</div>
+				</a>
 
 				<!-- BLOCK-3 -->
-				<div class="news-block">
+				<a href="#" class="news-block">
 					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
-					<h4>This is a simple blog post with an extra super long title</h4>
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
 					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -254,66 +313,19 @@
 					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
 				</p>
 				<div class="client-name">
-					<p>Client Name</p>
+					Client Name
 				</div>
-				<img src="img/client.jpg" alt="client">
+
+				<ul>
+					<li><a href="#"><img src="img/client.jpg" class="client-img" alt="client"></a></li>
+					<li><a href="#"><img src="img/client.jpg" class="client-img" alt="client"></a></li>
+					<li><a href="#"><img src="img/client.jpg" class="client-img" alt="client"></a></li>
+					<li><a href="#"><img src="img/client.jpg" class="client-img" alt="client"></a></li>
+					<li><a href="#"><img src="img/client.jpg" class="client-img" alt="client"></a></li>		
+				</ul>
 			</div>
 
-			<!-- Client-2 -->
-			<div class="client-feeback">
-				<p class="feedback-text">
-					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
-				</p>
-				<div class="client-name">
-					<p>Client Name</p>
-				</div>
-				<img src="img/client.jpg" alt="client">
-			</div>
-
-			<!-- Client-3 -->
-			<div class="client-feeback">
-				<p class="feedback-text">
-					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
-				</p>
-				<div class="client-name">
-					<p>Client Name</p>
-				</div>
-				<img src="img/client.jpg" alt="client">
-			</div>
-
-			<!-- Client-4 -->
-			<div class="client-feeback">
-				<p class="feedback-text">
-					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
-				</p>
-				<div class="client-name">
-					<p>Client Name</p>
-				</div>
-				<img src="img/client.jpg" alt="client">
-			</div>
-
-			<!-- Client-5 -->
-			<div class="client-feeback">
-				<p class="feedback-text">
-					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
-				</p>
-				<div class="client-name">
-					<p>Client Name</p>
-				</div>
-				<img src="img/client.jpg" alt="client">
-			</div>
-
-			<!-- Client-6 -->
-			<div class="client-feeback">
-				<p class="feedback-text">
-					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
-				</p>
-				<div class="client-name">
-					<p>Client Name</p>
-				</div>
-				<img src="img/client.jpg" alt="client">
-			</div>
-
+		
 		</div>
 	</section>
 
@@ -392,7 +404,6 @@
 	================================== -->
 
 	<footer>
-		<div class="container">
 			<div class="footer-blocks">
 				<!-- recent posts -->
 				<div class="recent-posts">
@@ -443,7 +454,7 @@
 			<hr>
 			<div class="footer-bottom">
 				<div class="copyright">
-					<p>copyright 2013 - <span>Thunder</span></p>
+					<p>copyright 2018 - <span>Thunder</span></p>
 				</div>
 
 				<div class="social-links">
@@ -461,6 +472,10 @@
 		</div>
 	</footer>
 
-	<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="js/parallax.js"></script>
 </body>
 </html>
