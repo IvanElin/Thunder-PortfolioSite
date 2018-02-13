@@ -438,7 +438,7 @@ header{
         position: absolute;
         bottom: -40px;
         left: 50%;
-        transform: translate(-20px);
+        transform: translate(-50%);
         border: 20px solid transparent;
         border-top: 20px solid #fff;
       }
@@ -473,8 +473,146 @@ header{
   }
 }
 
+// OUR CLIENTS
 
+.our-clients{
+  padding: 50px 0;
+  background-color: #fff;
+}
 
+.our_clients-up_headings{
+  position: relative;
+  h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    top: -9px;
+    background-color: #fff;
+    padding-right: 30px;
+    font-weight: 600;
+  }
+}
+
+.hr-up_headings{
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.client-logos{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.client-logo{
+  border: 2px solid #fff;
+  transition: 250ms;
+  margin: 5px 3px;
+  position: relative;
+  cursor: pointer;
+  .img_pop-up{
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 10px solid transparent;
+      border-top: 10px solid #333;
+   }
+  }
+&:hover{
+  border: 2px solid #ddd;
+  .img_pop-up{
+    opacity: 1;
+    transition: 300ms;
+    top:-45px
+  }
+}
+
+}
+
+// NEWEST PRODUCTS
+
+.newest-products{
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  h4{
+    display: inline-block;
+    padding: 10px;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+}
+
+.product{
+  padding: 15px 15px 0;
+  margin: 0 10px;
+  display: flex;
+
+  flex-direction: column;
+  background-color: #fff;
+  transition: 250ms;
+  cursor: pointer;
+  
+  h5{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 25px 0 15px;
+  }
+  p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #79c277;
+  }
+  &:hover{
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.35);
+  }
+}
+
+// CALL TO ACTION
+.cta{
+  background-color: #79c277;
+  text-align: center;
+  p{
+    font-size: 32px;
+    padding: 60px 0;
+    color: #fff;
+    a{
+      color: #fff;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      transition: 250ms;
+      &:hover{
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #79c277;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px){
   .our-features{
