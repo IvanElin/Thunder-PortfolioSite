@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet/less" href="css/style.less">
+	<!-- My styles -->
+	<link rel="stylesheet/less" href="css/style.less">	
+	<link rel="stylesheet/less" href="css/media.less">
+	<!-- Less -->
 	<script src="js/less.min.js"></script>
 	<meta charset="UTF-8">
+	<!-- FontAwesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thunder Portfolio Site</title>
@@ -31,7 +36,11 @@
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
-					</nav>		
+					</nav>	
+					
+					<div class="menu-toggle">
+						<div class="hamburger"></div>
+					</div>
 			</div>					
 		</div>
 	</header>
@@ -63,7 +72,9 @@
 							<div class="carousel-caption d-none d-md-block">
 								<div class="container">
 									<div class="second_slide_caption">
-										<img src="img/computers.png" alt="computers">
+										<div class="second_slide-img">
+											<img src="img/computers.png" alt="computers">
+										</div>
 										<div class="second_slide_hesdings">
 											<h2>Responsive & Retina Ready</h2>
 											<p>Our lovely theme was built with
